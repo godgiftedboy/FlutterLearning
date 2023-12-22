@@ -14,12 +14,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Expanded widgets"),
         ),
-        body: Row(
+        body: Column(
           children: [
             Expanded(
               flex: 3,
               child: Container(
-                width: 50,
                 height: 200,
                 color: Colors.blue,
               ),
@@ -27,7 +26,6 @@ class MyApp extends StatelessWidget {
             Expanded(
               flex: 4,
               child: Container(
-                width: 50,
                 height: 200,
                 color: Colors.green,
               ),
@@ -35,7 +33,6 @@ class MyApp extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                width: 50,
                 height: 200,
                 color: Colors.red,
               ),
@@ -43,7 +40,6 @@ class MyApp extends StatelessWidget {
             Expanded(
               flex: 2,
               child: Container(
-                width: 50,
                 height: 200,
                 color: Colors.orange,
               ),
