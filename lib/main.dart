@@ -34,15 +34,25 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: RoundedButton(
-        btnName: "Login",
-        icon: Icon(Icons.login),
-        btnColor: Colors.red,
-        callBack: () {
-          print("Logged in Succesfully");
-        },
-        textStyle: TextStyle(
-          fontWeight: FontWeight.bold,
+      body: Center(
+        // ignore: sized_box_for_whitespace
+        child: Container(
+          width: 150,
+          child: RoundedButton(
+            btnName: "Login",
+            icon: const Icon(
+              Icons.login,
+              color: Colors.white,
+            ),
+            callBack: () {
+              // ignore: avoid_print
+              print("Logged in Succesfully");
+            },
+            textStyle: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
     );

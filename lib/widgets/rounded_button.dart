@@ -1,6 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
@@ -24,6 +21,12 @@ class RoundedButton extends StatelessWidget {
       onPressed: () {
         callBack!();
       },
+      style: ElevatedButton.styleFrom(
+          backgroundColor: btnColor,
+          shadowColor: btnColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(21),
+          )),
       child: icon != null
           ? Row(
               children: [
