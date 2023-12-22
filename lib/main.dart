@@ -35,25 +35,64 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        // ignore: sized_box_for_whitespace
-        child: Container(
-          width: 150,
-          child: RoundedButton(
-            btnName: "Login",
-            icon: const Icon(
-              Icons.login,
-              color: Colors.white,
-            ),
-            callBack: () {
-              // ignore: avoid_print
-              print("Logged in Succesfully");
-            },
-            textStyle: const TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          SizedBox(
+            width: 150,
+            child: RoundedButton(
+              btnName: "Login",
+              icon: const Icon(
+                Icons.login,
+                color: Colors.white,
+              ),
+              callBack: () {
+                // ignore: avoid_print
+                print("Logged in Succesfully");
+              },
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
           ),
-        ),
+
+          //play button
+          SizedBox(
+            width: 150,
+            child: RoundedButton(
+              btnColor: Colors.red,
+              btnName: "Play",
+              icon: const Icon(
+                Icons.play_arrow,
+                color: Colors.white,
+              ),
+              callBack: () {
+                // ignore: avoid_print
+                print("Played");
+              },
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ),
+
+          //press button
+          SizedBox(
+            width: 150,
+            child: RoundedButton(
+              btnColor: Colors.grey,
+              btnName: "Press",
+              callBack: () {
+                // ignore: avoid_print
+                print("Pressed");
+              },
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ]),
       ),
     );
   }

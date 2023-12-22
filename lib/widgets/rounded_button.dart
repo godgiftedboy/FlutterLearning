@@ -31,6 +31,9 @@ class RoundedButton extends StatelessWidget {
           ? Row(
               children: [
                 icon!,
+                const SizedBox(
+                  width: 15,
+                ),
                 Text(
                   btnName!,
                   style: textStyle,
