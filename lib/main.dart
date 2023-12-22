@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/widgets/rounded_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,37 +34,16 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            flex: 3,
-            child: Container(
-              height: 200,
-              color: Colors.blue,
-            ),
-          ),
-          Expanded(
-            flex: 4,
-            child: Container(
-              height: 200,
-              color: Colors.green,
-            ),
-          ),
-          Expanded(
-            flex: 2,
-            child: Container(
-              height: 200,
-              color: Colors.red,
-            ),
-          ),
-          Expanded(
-            flex: 2,
-            child: Container(
-              height: 200,
-              color: Colors.orange,
-            ),
-          ),
-        ],
+      body: RoundedButton(
+        btnName: "Login",
+        icon: Icon(Icons.login),
+        btnColor: Colors.red,
+        callBack: () {
+          print("Logged in Succesfully");
+        },
+        textStyle: TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
