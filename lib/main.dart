@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/widgets/rounded_button.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,11 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          const FaIcon(
+            FontAwesomeIcons.amazon,
+            color: Colors.blue,
+            size: 50,
+          ),
           SizedBox(
             width: 150,
             child: RoundedButton(
