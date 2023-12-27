@@ -34,20 +34,19 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       body: Container(
-        width: double.infinity,
-        height: double.infinity,
+        width: 300,
+        height: 300,
         color: Colors.blueGrey,
         child: Stack(
           children: [
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.red,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.white,
+            Positioned(
+              bottom: 1,
+              left: 1,
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
