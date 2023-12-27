@@ -33,24 +33,24 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: Colors.blueGrey,
-        child: Stack(
-          children: [
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.red,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.white,
-            ),
-          ],
-        ),
+      body: Stack(
+        children: [
+          Container(
+            width: double.infinity,
+            height: double.infinity,
+            color: Colors.blueGrey,
+          ),
+          Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.white,
+          ),
+        ],
       ),
     );
   }
